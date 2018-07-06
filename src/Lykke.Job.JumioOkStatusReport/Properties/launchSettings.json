@@ -1,0 +1,26 @@
+{
+  "profiles": {
+    "JumioOkStatusReport local dev settings": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "SettingsUrl": "token_to_dev_settings",
+        "ENV_INFO": "localhost_dev"
+      }
+    },
+    "JumioOkStatusReport local test settings": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Staging",
+        "SettingsUrl": "token_to_test_settings",
+        "ENV_INFO": "localhost_test"
+      }
+    },
+    "JumioOkStatusReport remote settings": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "SettingsUrl": "http://settings.lykke-settings.svc.cluster.local/your_token_JumioOkStatusReportJob"
+      }
+    }
+  }
+}
